@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { User,  Project } = require('../models')
 
-const serialize = JSON.stringify
+// const serialize = JSON.stringify
 
 router.get('/', async (req, res) => {
   const projectData = await Project.findAll({
